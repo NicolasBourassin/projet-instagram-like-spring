@@ -4,6 +4,7 @@ import com.example.projetinstagramlikespring.repository.CommentRepository;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import java.util.List;
 
 @RestController
 public class CommentRestController {

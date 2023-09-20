@@ -13,6 +13,8 @@ public class User {
     @Column(unique = true)
     private String username;
     private String password;
+    private String photoUrl;
+
     @OneToMany(mappedBy = "author")
     private List<Posting> postingList;
     @ManyToMany
@@ -22,17 +24,19 @@ public class User {
     public User() {
     }
 
-    public User(Long id, String username, String password, List<Posting> postingList, List<Posting> likedPostingList) {
+    public User(Long id, String username, String password, String photoUrl, List<Posting> postingList, List<Posting> likedPostingList) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.photoUrl = photoUrl;
         this.postingList = postingList;
         this.likedPostingList = likedPostingList;
     }
 
-    public User(String username, String password) {
+    public User(String username, String password, String photoUrl) {
         this.username = username;
         this.password = password;
+        this.photoUrl = photoUrl;
     }
 
     public Long getId() {
@@ -57,6 +61,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 
     public List<Posting> getPostingList() {
