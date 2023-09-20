@@ -22,6 +22,30 @@ public class CommentDTO {
         this.textualComment = textualComment;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public UserDTO getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(UserDTO author) {
+        this.author = author;
+    }
+
+    public String getTextualComment() {
+        return textualComment;
+    }
+
+    public void setTextualComment(String textualComment) {
+        this.textualComment = textualComment;
+    }
+
     @Override
     public String toString() {
         return "CommentDTO{" +
