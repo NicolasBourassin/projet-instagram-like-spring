@@ -1,7 +1,6 @@
 package com.example.projetinstagramlikespring.controller;
 
-import com.example.projetinstagramlikespring.model.Posting;
-import com.example.projetinstagramlikespring.model.User;
+import com.example.projetinstagramlikespring.repository.entity.Posting;
 import com.example.projetinstagramlikespring.repository.PostingRepository;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.example.projetinstagramlikespring.model;
+package com.example.projetinstagramlikespring.repository.entity;
 
 import jakarta.persistence.*;
 

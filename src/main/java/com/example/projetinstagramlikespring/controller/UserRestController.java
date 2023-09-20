@@ -1,5 +1,5 @@
 package com.example.projetinstagramlikespring.controller;
-import com.example.projetinstagramlikespring.model.User;
+import com.example.projetinstagramlikespring.repository.entity.User;
 import com.example.projetinstagramlikespring.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
 

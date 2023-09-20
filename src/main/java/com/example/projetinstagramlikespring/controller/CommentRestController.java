@@ -1,6 +1,5 @@
 package com.example.projetinstagramlikespring.controller;
-import com.example.projetinstagramlikespring.model.Comment;
-import com.example.projetinstagramlikespring.model.Posting;
+import com.example.projetinstagramlikespring.repository.entity.Comment;
 import com.example.projetinstagramlikespring.repository.CommentRepository;
 import org.springframework.web.bind.annotation.*;
 
