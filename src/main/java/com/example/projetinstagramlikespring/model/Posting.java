@@ -14,7 +14,7 @@ public class Posting {
     @JoinColumn(name = "author_id")
     private User author;
     private String urlContent;
-    private Boolean isAVideo; //if false, this is a picture
+    private Boolean videoType; //if false, this is a picture
     private Integer likesCounter;
     @OneToMany
     private List<Comment> commentList;
@@ -26,21 +26,21 @@ public class Posting {
     public Posting() {
     }
 
-    public Posting(Long id, User author, String urlContent, Boolean isAVideo, Integer likesCounter,
+    public Posting(Long id, User author, String urlContent, Boolean videoType, Integer likesCounter,
                    List<Comment> commentList, List<User> likingUserList) {
         this.id = id;
         this.author = author;
         this.urlContent = urlContent;
-        this.isAVideo = isAVideo;
+        this.videoType = videoType;
         this.likesCounter = likesCounter;
         this.commentList = commentList;
         this.likingUserList = likingUserList;
     }
 
-    public Posting(User author, String urlContent, Boolean isAVideo, Integer likesCounter) {
+    public Posting(User author, String urlContent, Boolean videoType, Integer likesCounter) {
         this.author = author;
         this.urlContent = urlContent;
-        this.isAVideo = isAVideo;
+        this.videoType = videoType;
         this.likesCounter = likesCounter;
     }
 
@@ -68,12 +68,12 @@ public class Posting {
         this.urlContent = urlContent;
     }
 
-    public Boolean getAVideo() {
-        return isAVideo;
+    public Boolean getVideoType() {
+        return videoType;
     }
 
-    public void setAVideo(Boolean AVideo) {
-        isAVideo = AVideo;
+    public void setVideoType(Boolean AVideo) {
+        videoType = AVideo;
     }
 
     public Integer getLikesCounter() {
