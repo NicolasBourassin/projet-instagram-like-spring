@@ -1,5 +1,6 @@
 package com.example.projetinstagramlikespring.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PostingDTO {
@@ -8,8 +9,8 @@ public class PostingDTO {
         private String urlContent;
         private Boolean videoType;
         private Integer likesCounter;
-        private List<CommentDTO> commentList;
-        private List<UserDTO> likedUserList;
+        private List<CommentDTO> commentList=new ArrayList<>();
+        private List<UserDTO> likedUserList=new ArrayList<>();
 
         public PostingDTO() {
         }
@@ -28,7 +29,6 @@ public class PostingDTO {
                 this.author = author;
                 this.urlContent = urlContent;
                 this.videoType = videoType;
-                this.likesCounter=0;
         }
 
         public Long getId() {
